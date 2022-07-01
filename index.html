@@ -5,7 +5,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
         <link rel='stylesheet' href='css/estilos.css'>
-        <title></title>
+        <title>Afiliación</title>
     </head>
     <body>
 
@@ -13,14 +13,50 @@
         <h1>Vení al Gym!</h1>
         </header>
 
-        <fieldset class="fieldset">
-            
-            <legend class="fieldset__legend">Datos Personales</legend>
+        <main class="flex">
 
-            <div class="fieldset__contenedor">
+            <fieldset class="fieldset">
 
-            </div>
-        </fieldset>
+                <legend class="fieldset__legend">Datos Personales</legend>
+
+                <div class="fieldset__contenedor">
+                    <form action="#" class="fieldset__form">
+
+                        <label for="nombre" class="requerido">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" required>
+
+                        <label for="apellido" class="requerido">Apellido: </label>
+                        <input type="text" name="apellido" id="apellido" required>
+
+                        <label for="documento" class="requerido">Documento: </label>
+                        <input type="number" name="documento" id="documento" required>
+
+                        <label for="nacionalidad" class="requerido">Nacionalidad: </label>
+                        <select name="nacionalidad" id="nacionalidad" required>
+                            <option value="-Seleccione">-Seleccione una opcion</option>
+                            <option value="arg">Argentin@</option>
+                            <option value="cl">Chilen@</option>
+                            <option value="br">Brasiler@</option>
+                            <option value="pr">Paraguay@</option>
+                            <option value="otro">Otra</option>
+                        </select>
+
+                        <label for="info">Contanos un poco de vos</label>
+                        <textarea name="info" id="info" maxlength="500"></textarea>
+
+                        <label class="requerido">Sexo:</label>
+                        <div class="contenedor-checkbox">
+                            <label for="masculino"><input type="checkbox" name="masculino" id="masculino" class="checkbox__input">Masculino</label>
+                            <label for="femenino"><input type="checkbox" name="femenino" id="femenino" class="checkbox__input">Femenino</label>
+                            <label for="otro"><input type="checkbox" name="otro" id="otro" class="checkbox__input">Otro</label>
+                        </div>
+
+                    </form>
+                </div>
+
+            </fieldset>
+
+        </main>
 
     <script src='js/main.js'></script>
     </body>

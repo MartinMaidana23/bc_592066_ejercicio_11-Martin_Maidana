@@ -8,4 +8,19 @@
 
 body {
    font-size: 16px;
+   font-family: Roboto, Poppins, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: inline;
+}
+
+.emoji-brazo {
+    width: 80px;
 }

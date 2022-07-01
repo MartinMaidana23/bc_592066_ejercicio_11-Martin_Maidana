@@ -22,13 +22,13 @@
                 <div class="fieldset__contenedor">
                     <form action="#" class="fieldset__form">
 
-                        <label for="nombre" class="requerido">Nombre: </label>
+                        <label for="nombre" class="requerido fieldset__label">Nombre: </label>
                         <input type="text" name="nombre" id="nombre" required>
 
-                        <label for="apellido" class="requerido">Apellido: </label>
+                        <label for="apellido" class="requerido fieldset__label">Apellido: </label>
                         <input type="text" name="apellido" id="apellido" required>
 
-                        <label for="documento" class="requerido">Documento: </label>
+                        <label for="documento" class="requerido fieldset__label">Documento: </label>
                         <input type="number" name="documento" id="documento" required>
 
                         <label for="nacionalidad" class="requerido">Nacionalidad: </label>
@@ -44,7 +44,7 @@
                         <label for="info">Contanos un poco de vos</label>
                         <textarea name="info" id="info" maxlength="500"></textarea>
 
-                        <label class="requerido">Sexo:</label>
+                        <label class="requerido fieldset__label">Sexo:</label>
                         <div class="contenedor-checkbox">
                             <label for="masculino"><input type="checkbox" name="masculino" id="masculino" class="checkbox__input">Masculino</label>
                             <label for="femenino"><input type="checkbox" name="femenino" id="femenino" class="checkbox__input">Femenino</label>
@@ -54,6 +54,21 @@
                     </form>
                 </div>
 
+            </fieldset>
+
+            <fieldset class="fieldset--formContacto">
+                <legend class="fieldset__legend--2">Datos de contacto</legend>
+                <div class="fieldset__contenedor">
+                    <form action="#" class="fieldset__form">
+
+                        <label for="telefono">Telefono:</label>
+                        <input type="number" name="telefono" id="telefono">
+
+                        <label for="email" class="requerido">Direccion de correo electronico</label>
+                        <input type="email" name="email" id="email" required>
+
+                    </form>
+                </div>
             </fieldset>
 
         </main>

@@ -12,7 +12,7 @@ body {
    font-family: Poppins, sans-serif;
 }
 
-label {
+label, .fieldset__label {
     margin: 5px;
     padding: 5px;
     display: flex;
@@ -27,6 +27,16 @@ input {
 textarea {
     width: 70%;
     height: 85px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+fieldset {
+    margin: 5px;
 }
 
 /* HEADER */
@@ -86,6 +96,25 @@ h1::after {
     .checkbox-input {
         margin: 2.5px;
     }
+
+/* DATOS DE CONTACTO */
+
+.fieldset__legend--2 {
+    margin: 20px;
+}
+
+.fieldset__legend--2::before {
+    content: '📱';
+}
+
+.fieldset__legend--2::after {
+    content: '📧';
+}
+
+.fieldset--formContacto {
+    height: 35vh;
+    width: 50vw;
+}
 
 
 

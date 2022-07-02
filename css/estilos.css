@@ -10,6 +10,18 @@
 body {
    font-size: 16px;
    font-family: Poppins, sans-serif;
+   background-color: #1f2023;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset {
+    margin: 5px;
 }
 
 label, .fieldset__label {
@@ -29,14 +41,8 @@ textarea {
     height: 85px;
 }
 
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-fieldset {
-    margin: 5px;
+.requerido::after {
+    content: '* ';
 }
 
 /* HEADER */
@@ -50,6 +56,7 @@ header {
 
 h1 {
     display: inline;
+    color: #e8eaed;
 }
 
 h1::after {
@@ -58,44 +65,38 @@ h1::after {
 
 /* DATOS PERSONALES */
 
-.flex {
-    display: flex;
-    justify-content: center;
-}
 
 .fieldset {
     width: 65vw;
     height: 90vh;
 }
 
-.fieldset__legend {
-    margin: 5px 20px;
-}
-
-.fieldset__legend::before {
-    content: '🙋🏻‍♂️';
-}
-
-.fieldset__legend::after {
-    content: '👀';
-}
-
-.fieldset__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.requerido::after {
-    content: '* ';
-}
-
-.contenedor-checkbox {
-    display: flex;
-}
-    .checkbox-input {
-        margin: 2.5px;
+    .fieldset__legend {
+        margin: 5px 20px;
+        color: #e8eaed;
     }
+
+    .fieldset__legend::before {
+        content: '🙋🏻‍♂️';
+    }
+
+    .fieldset__legend::after {
+        content: '👀';
+    }
+
+    .fieldset__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .contenedor-checkbox {
+        display: flex;
+    }
+        .checkbox-input {
+            margin: 2.5px;
+        }
 
 /* DATOS DE CONTACTO */
 
@@ -141,15 +142,22 @@ h1::after {
     justify-content: flex-start;
 }
 
-.tyc {
-    width: 12px;
-    margin: 0 5px 0 0;
-}
+    .contenedor-checkbox-- p {
+        color: #e8eaed;
+        font-weight:bold ;
+    }
 
-.section__label {
-    margin: 0;
-    padding: 0;
-}
+
+    .tyc {
+        width: 12px;
+        margin: 0 5px 0 0;
+    }
+
+    .section__label {
+        margin: 0;
+        padding: 0;
+        color: #e8eaed;
+    }
 
 
 

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto:wght@100;300;400;900&display=swap');
 /* Selecciones universales */
+:root {
+    --color-fondo:#1f2023;
+    --verde: #4d6d63;
+    --verde-claro:#a6c1b9;
+    --verde-oscuro:#2b3d37;
+    --blanco-letras:#e8eaed;
+    --ancho-general:55vw;
+}
+
 
 * {
    margin: 0;
@@ -10,7 +19,7 @@
 body {
    font-size: 16px;
    font-family: Poppins, sans-serif;
-   background-color: #1f2023;
+   background-color: var(--color-fondo);
 }
 
 .flex {
@@ -28,21 +37,37 @@ label, .fieldset__label {
     margin: 5px;
     padding: 5px;
     display: flex;
+    font-size: 2em;
+    font-family: Roboto;
 }
 
-input {
+span {
+    font-size: 1.3em;
+}
+
+[type*='text'], [type*='number'], [type*='email'] {
     width: 70%;
+    height: 3em;
     text-align: center;
-    margin: 0 5px 0 5px;
+    border-radius: 5px;
+    border: 1px var(--verde) solid;
+    text-align: right;
+    margin: 15px;
+}
+
+input, select, textarea {
+    margin: 15px;
 }
 
 textarea {
     width: 70%;
-    height: 85px;
+    height: 15em;
+    border-radius: 5px;
+    border: 1px var(--verde) solid;
 }
 
-.requerido::after {
-    content: '* ';
+#email {
+    padding: 15px;
 }
 
 /* HEADER */
@@ -56,32 +81,41 @@ header {
 
 h1 {
     display: inline;
+    text-align: center;
+    width: var(--ancho-general);
+    margin: 20px;
+    font-size: 4.5em;
+    font-weight: 900;
     color: #e8eaed;
+    border-top: 25px var(--verde) solid;
+    border-bottom: 25px var(--verde) solid;
+    border-left: 25px var(--color-fondo) solid;
+    border-right: 25px var(--color-fondo) solid;
 }
 
-h1::after {
-    content: '💪🏻';
-}
+
 
 /* DATOS PERSONALES */
 
 
 .fieldset {
-    width: 65vw;
-    height: 90vh;
+    width: var(--ancho-general);
+    background-color: var(--verde-claro);
+    border: 2px var(--verde) solid;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 50px;
 }
+
 
     .fieldset__legend {
         margin: 5px 20px;
-        color: #e8eaed;
-    }
-
-    .fieldset__legend::before {
-        content: '🙋🏻‍♂️';
-    }
-
-    .fieldset__legend::after {
-        content: '👀';
+        padding: 5px;
+        color: var(--blanco-letras);
+        background-color: var(--verde);
+        border-radius: 5px;
+        font-size: 1.5em;
+        font-weight: 600;
     }
 
     .fieldset__form {
@@ -90,44 +124,37 @@ h1::after {
         align-items: center;
     }
 
+    .fieldset__select {
+        height: 3em;
+        width: 70%;
+    }
+
+        .fieldset__select option {
+            font-size: 2em;
+        }
+
 
     .contenedor-checkbox {
         display: flex;
     }
-        .checkbox-input {
-            margin: 2.5px;
+
+        input[type=radio] {
+            transform: scale(1.3);
+            margin: 5px;
+        }
+
+        [type='checkbox'] {
+            transform: scale(1.3);
+            margin-right: 10px;
         }
 
 /* DATOS DE CONTACTO */
 
-.fieldset__legend--2 {
-    margin: 20px;
-}
-
-.fieldset__legend--2::before {
-    content: '📱';
-}
-
-.fieldset__legend--2::after {
-    content: '📧';
-}
-
 .fieldset--formContacto {
-    height: 35vh;
+    border-top: 15px dotted var(--verde-claro);
 }
 
 /* ACTIVIDADES */
-
-.fieldset__legend--3::before {
-    content: '🚴🏼‍♂️';
-}
-.fieldset__legend--3::after {
-    content: '🤸🏻‍♂️';
-}
-
-.fieldset--actividades {
-    height: 45vh;
-}
 
 .fieldset__parrafo {
     margin: 10px;
@@ -138,25 +165,25 @@ h1::after {
 .contenedor-checkbox-- {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: var(--ancho-general);
     justify-content: flex-start;
 }
 
     .contenedor-checkbox-- p {
-        color: #e8eaed;
+        color: var(--blanco-letras);
         font-weight:bold ;
     }
 
 
     .tyc {
-        width: 12px;
-        margin: 0 5px 0 0;
+        /* width: 12px; */
+        margin: 5px;
     }
 
     .section__label {
-        margin: 0;
+        margin: 5px;
         padding: 0;
-        color: #e8eaed;
+        color: var(--blanco-letras);
     }
 
 

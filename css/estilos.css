@@ -64,7 +64,7 @@ h1::after {
 }
 
 .fieldset {
-    width: 50vw;
+    width: 65vw;
     height: 90vh;
 }
 
@@ -113,8 +113,45 @@ h1::after {
 
 .fieldset--formContacto {
     height: 35vh;
-    width: 50vw;
 }
+
+/* ACTIVIDADES */
+
+.fieldset__legend--3::before {
+    content: '🚴🏼‍♂️';
+}
+.fieldset__legend--3::after {
+    content: '🤸🏻‍♂️';
+}
+
+.fieldset--actividades {
+    height: 45vh;
+}
+
+.fieldset__parrafo {
+    margin: 10px;
+}
+
+/* TyC */
+
+.contenedor-checkbox-- {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: flex-start;
+}
+
+.tyc {
+    width: 12px;
+    margin: 0 5px 0 0;
+}
+
+.section__label {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
 

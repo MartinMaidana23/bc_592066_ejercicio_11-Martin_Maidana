@@ -7,6 +7,10 @@
     --verde-oscuro:#2b3d37;
     --blanco-letras:#e8eaed;
     --ancho-general:55vw;
+
+    /* RESPONSIVE */
+    --ancho-celu:40vw;
+    --ancho-tablet:45vw;
 }
 
 
@@ -27,6 +31,13 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 fieldset {
@@ -118,11 +129,13 @@ h1 {
         font-weight: 600;
     }
 
-    .fieldset__form {
+    .fieldset__contenedor {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
+
 
     .fieldset__select {
         height: 3em;
@@ -150,9 +163,7 @@ h1 {
 
 /* DATOS DE CONTACTO */
 
-.fieldset--formContacto {
-    border-top: 15px dotted var(--verde-claro);
-}
+
 
 /* ACTIVIDADES */
 
@@ -176,7 +187,6 @@ h1 {
 
 
     .tyc {
-        /* width: 12px; */
         margin: 5px;
     }
 
@@ -205,13 +215,97 @@ h1 {
 
 
 /* RESPONSIVE */ 
- /* @media screen and (min-width:480px){
-    .main {
-        width: 30vw;
+/*  @media screen and (min-width:320px) {
+    h1 {
+        width: var(--ancho-celu);
+        font-size: 2em;
+    }
+
+    span {
+        font-size: 1.3em;
+    }
+
+    label, .fieldset__label {
+        font-size: 1em;
+    }
+
+    .fieldset {
+        width: var(--ancho-celu);
+        margin: 1px;
+    }
+
+        .fieldset__legend {
+            font-size: 1em;
+            
+        }
+
+    .contenedor-checkbox-- {
+        width: var(--ancho-celu);
+    }
+
+    .button {
+        font-size: 1em;
     }
 
  }
- */
+
+ @media screen and (min-width:960px) {
+    h1 {
+        width: var(--ancho-tablet);
+        font-size: 3em;
+    }
+
+    span {
+        font-size: 1.3em;
+    }
+
+    label, .fieldset__label {
+        font-size: 1.5em;
+    }
+
+    .fieldset {
+        width: var(--ancho-tablet);
+        margin: 1px;
+    }
+
+        .fieldset__legend {
+            font-size: 1em;
+            
+        }
+
+    .contenedor-checkbox-- {
+        width: var(--ancho-tablet);
+    }
+ }
+
+ @media screen and (min-width:1320px) {
+    h1 {
+        width: var(--ancho-general);
+    }
+
+    span {
+        font-size: 1.3em;
+    }
+
+    label, .fieldset__label {
+        font-size: 2em;
+    }
+
+    .fieldset {
+        width: var(--ancho-general);
+        margin: 1px;
+    }
+
+        .fieldset__legend {
+            font-size: 1em;
+            
+        }
+
+    .contenedor-checkbox-- {
+        width: var(--ancho-general);
+    }
+ } */
+ 
     
 
 

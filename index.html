@@ -13,14 +13,14 @@
         <h1>Vení al Gym!💪🏻</h1>
         </header>
 
-        <main class="flex">
+        <main class="main">
 
             <fieldset class="fieldset">
 
                 <legend class="fieldset__legend">🙋🏻‍♂️<span>D</span>ATOS <span>P</span>ERSONALES👀</legend>
 
                 <div class="fieldset__contenedor">
-                    <form action="#" class="fieldset__form">
+                    <form action="#" class="fieldset__form" id="formulario">
 
                         <label for="nombre" class="fieldset__label">Nombre:* </label>
                         <input type="text" name="nombre" id="nombre" required>
@@ -105,12 +105,12 @@
             </section>
 
             <div class="botones">
-                <button type="submit"><a href="#">Iniciar afiliación</a></button>
-                <button type="reset"><a href="#">Restablecer</a></button>
+                <button type="submit" class="button" form="formulario">Iniciar afiliación</a></button>
+                <button type="reset" class="button" form="formulario">Restablecer</a></button>
             </div>
 
         </main>
-
+    
     <script src='js/main.js'></script>
     </body>
     </html>

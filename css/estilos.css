@@ -22,7 +22,7 @@ body {
    background-color: var(--color-fondo);
 }
 
-.flex {
+.main {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -185,6 +185,34 @@ h1 {
         padding: 0;
         color: var(--blanco-letras);
     }
+
+    .section p {
+        margin: 10px;
+    }
+
+/* BOTONES */ 
+
+.button {
+    margin: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--verde-oscuro);
+    border: 2px solid var(--verde);
+    font-size: 2em;
+    color: var(--verde-claro);
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE */ 
+ /* @media screen and (min-width:480px){
+    .main {
+        width: 30vw;
+    }
+
+ }
+ */
+    
 
 
 

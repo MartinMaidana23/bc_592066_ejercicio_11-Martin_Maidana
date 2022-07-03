@@ -40,9 +40,9 @@ body {
     flex-direction: column;
 }
 
-fieldset {
+/* fieldset {
     margin: 5px;
-}
+} */
 
 label, .fieldset__label {
     margin: 5px;

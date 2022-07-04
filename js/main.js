@@ -9,10 +9,11 @@ console.log(bootcamp);
     --verde-claro2: #d6e2de; */
 
 
+
 // primer fieldset
 let fieldset = document.getElementsByClassName('fieldset')[0]
 let legend = document.getElementsByClassName('fieldset__legend')[0]
-let nombre = document.querySelector('#nombre')
+let nombre = document.querySelector('#nombre');
 let apellido = document.querySelector('#apellido')
 let documento = document.querySelector('#documento')
 let nacionalidad = document.querySelector('#nacionalidad')
@@ -33,15 +34,14 @@ let oscuro = () => {
 }
 
 
-
-nombre.addEventListener('click', oscuro) 
-apellido.addEventListener('click', oscuro) 
-documento.addEventListener('click', oscuro) 
-nacionalidad.addEventListener('click', oscuro) 
-info.addEventListener('click', oscuro) 
-masculino.addEventListener('click', oscuro) 
-femenino.addEventListener('click', oscuro) 
-otro.addEventListener('click', oscuro) 
+nombre.addEventListener("focus", oscuro) 
+apellido.addEventListener("focus", oscuro) 
+documento.addEventListener("focus", oscuro) 
+nacionalidad.addEventListener("focus", oscuro) 
+info.addEventListener("focus", oscuro) 
+masculino.addEventListener("focus", oscuro) 
+femenino.addEventListener("focus", oscuro) 
+otro.addEventListener("focus", oscuro) 
 
 // segundo fieldset
 
@@ -62,8 +62,8 @@ let oscuro1 = () => {
     legend2.style.backgroundColor="#4d6d63"
 }
 
-telefono.addEventListener('click', oscuro1)
-email.addEventListener('click', oscuro1)
+telefono.addEventListener("focus", oscuro1)
+email.addEventListener("focus", oscuro1)
 
 // ulitmo fieldset 
 
@@ -89,14 +89,16 @@ let oscuro2 = () => {
     legend2.style.backgroundColor="#2b3d37"
 }
 
-basquet.addEventListener('click', oscuro2)
-futbol.addEventListener('click', oscuro2)
-boxeo.addEventListener('click', oscuro2)
-tenis.addEventListener('click', oscuro2)
-basquet2.addEventListener('click', oscuro2)
-futbol2.addEventListener('click', oscuro2)
-rugby.addEventListener('click', oscuro2)
-voley.addEventListener('click', oscuro2)
+basquet.addEventListener("focus", oscuro2)
+futbol.addEventListener("focus", oscuro2)
+boxeo.addEventListener("focus", oscuro2)
+tenis.addEventListener("focus", oscuro2)
+basquet2.addEventListener("focus", oscuro2)
+futbol2.addEventListener("focus", oscuro2)
+rugby.addEventListener("focus", oscuro2)
+voley.addEventListener("focus", oscuro2)
+
+
 
 
 

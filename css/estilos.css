@@ -77,6 +77,14 @@ input:focus,  textarea:focus {
     color: white;
 }
 
+.fieldset:focus-within {
+    background-color:var(--verde-claro);
+}
+
+fieldset:focus-within > legend {
+    background-color: var(--verde-oscuro);
+}
+
 textarea {
     width: 70%;
     height: 15em;
@@ -111,6 +119,9 @@ h1 {
     border-right: 25px var(--color-fondo) solid;
 }
 
+.emoji {
+    font-family: 'Segoe UI Emoji';
+}
 
 
 /* DATOS PERSONALES */
@@ -133,7 +144,7 @@ h1 {
         color: var(--blanco-letras);
         background-color: var(--verde);
         border-radius: 5px;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: 600;
     }
 

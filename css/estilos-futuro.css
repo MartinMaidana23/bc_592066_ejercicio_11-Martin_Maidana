@@ -30,7 +30,7 @@ h1 {
     width: var(--ancho);
     border-radius: 5px;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 label, .fieldset__label {
@@ -226,6 +226,10 @@ hr {
 }
 
 @media screen and (min-width:400px) {
+    h1{
+        font-size: 2em;
+    }
+    
     #fieldset {
         position: relative;
         align-self: flex-start;
@@ -295,6 +299,10 @@ hr {
 }
 
 @media screen and (min-width:960px) {
+    h1{
+        font-size: 3em;
+    }
+    
     #fieldset {
         position: relative;
         align-self: flex-start;

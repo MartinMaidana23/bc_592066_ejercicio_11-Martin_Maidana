@@ -5,7 +5,7 @@
     --color-fondo-2:#000300;
     --color-input:#0e2a47;
     --color-boton:#2e20c3;
-    --ancho:55vw;
+    --ancho:70vw;
 }
 
 * {
@@ -92,6 +92,7 @@ hr {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .fieldset {
@@ -99,11 +100,18 @@ hr {
     background-color: var(--color-fondo-2);
     border-radius: 20px;
     padding: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
     box-shadow: 0 0 5000px var(--color-input);
     
     
+}
+
+#fieldset {
+    position: relative;
+    align-self: flex-start;
+    width: 40vw;
+    left: -15%;
 }
 
     .fieldset__legend {
@@ -151,13 +159,23 @@ hr {
             margin-right: 10px;
         }
 
-.fieldset--actividades {
-    margin-bottom: 10px;
+#fieldset-contacto {
+    position: absolute;
+    width: 30vw;
+    left: 60%;
+    bottom: 70%;
 }
 
+.fieldset--actividades {
+    position: absolute;
+    width: 40vw;
+    right: -10%;
+    top: 50%;
+}
 
 .fieldset__parrafo {
     margin: 10px;
+    color: white;
 }
         
 .contenedor-checkbox- {
@@ -166,16 +184,19 @@ hr {
     flex-wrap: wrap;
 }
 
+
 .contenedor-checkbox-- {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    margin: 20px;
 }
 
 .contenedor-checkbox-- p {
     font-weight: 800;
     margin: 15px;
+    color: white;
 }
 
 .botones {
@@ -200,7 +221,6 @@ hr {
     background-color: var(--color-boton);
     box-shadow: 0 0 10px var(--color-boton),0 0 40px var(--color-boton),0 0 80px var(--color-boton);
     transition-delay: 0.3s;
-
     cursor: pointer;
 }
 

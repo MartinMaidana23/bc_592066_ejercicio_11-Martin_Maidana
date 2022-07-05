@@ -11,9 +11,13 @@ let futurista = () => {
     link.setAttribute("href", "css/estilos-futuro.css")
 }
 
-document.querySelector('#retro').addEventListener('click', retro)
+let normal = () => {
+    link.setAttribute("href", "css/estilos.css")
+}
 
+document.querySelector('#retro').addEventListener('click', retro)
 document.querySelector('#futuro').addEventListener('click', futurista)
+document.querySelector('#normal').addEventListener('click', normal)
 
 
 

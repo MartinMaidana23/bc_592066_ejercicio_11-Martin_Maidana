@@ -52,13 +52,14 @@ span {
     height: 3em;
     border-radius: 5px;
     border: 1px var(--color-input) solid;
-    text-align: left;
+    text-align: center;
     margin: 15px;
 }
 
 select {
     border: 1px var(--color-input) solid;
     border-radius: 5px;
+    background-color: rgba(204, 204, 204, 0.322);
     color: white;
 }
 
@@ -80,6 +81,7 @@ hr {
     display: none;
 }
 
+
 /* --------------------------------- */
 .main {
     
@@ -100,19 +102,11 @@ hr {
     background-color: var(--color-fondo-2);
     border-radius: 20px;
     padding: 15px;
-    /* margin-top: 50px;
-    margin-bottom: 50px; */
     box-shadow: 0 0 5000px var(--color-input);
     
     
 }
 
-#fieldset {
-    position: relative;
-    align-self: flex-start;
-    width: 40vw;
-    left: -15%;
-}
 
     .fieldset__legend {
         margin: 5px 20px;
@@ -159,6 +153,13 @@ hr {
             margin-right: 10px;
         }
 
+#fieldset {
+    position: relative;
+    align-self: flex-start;
+    width: 40vw;
+    right:500px;
+}
+
 #fieldset-contacto {
     position: absolute;
     width: 30vw;
@@ -169,7 +170,7 @@ hr {
 .fieldset--actividades {
     position: absolute;
     width: 40vw;
-    right: -10%;
+    right: -40%;
     top: 50%;
 }
 
@@ -224,105 +225,147 @@ hr {
     cursor: pointer;
 }
 
-/* Responsive */
-
 @media screen and (min-width:400px) {
-    .form {
-        width: 60vw;
+    #fieldset {
+        position: relative;
+        align-self: flex-start;
+        width: 40vw;
+        left:200px;
     }
     
-    .fieldset__legend {
-        margin: 5px 10px;
-        font-size: 0.8em;
-    }
-
-
-    .contenedor-checkbox {
-        flex-direction: column;
-    }
-
-    .checkbox__input {
-        align-self: flex-start;
-        margin: 0;
-    }
-
-    input[type=radio] {
-        margin: 0;
-    }
-
-    .contenedor-checkbox- {
-        flex-direction: column;
-    }
-
-    input[type=checkbox] {
-        align-self: flex-start;
+    #fieldset-contacto {
+        position: absolute;
+        width: 30vw;
+        left:0;
+        bottom: 70%;
     }
     
-    .botones {
-        flex-direction: column;
-    }
-
-    .button {
-        margin: 10px;
-        padding: 10px;
+    .fieldset--actividades {
+        position: absolute;
+        width: 40vw;
+        left:0;
+        top: 29%;
     }
 }
 
- @media screen and (min-width:960px) {
-    .form {
-        width: var(--ancho);
+@media screen and (min-width:600px) {
+    #fieldset {
+        position: relative;
+        align-self: flex-start;
+        width: 40vw;
+        left:300px;
     }
     
-    .fieldset__legend {
-        margin: 5px 10px;
-        font-size: 1em;
+    #fieldset-contacto {
+        position: absolute;
+        width: 30vw;
+        left:0;
+        bottom: 70%;
     }
-
-
-    .contenedor-checkbox {
-        flex-direction: row;
-    }
-
-    .checkbox__input {
-        margin: 5px;
-    }
-
-    input[type=radio], input[type=checkbox] {
-        margin: 5px;
-        align-self: center;
-    }
-
-    .contenedor-checkbox- {
-        flex-direction: row;
-    }
-
     
-    .botones {
-        flex-direction: row;
+    .fieldset--actividades {
+        position: absolute;
+        width: 40vw;
+        left:0;
+        top: 29%;
     }
+}
 
-    .button {
-        margin: 10px;
-        padding: 10px;
+@media screen and (min-width:800px) {
+    #fieldset {
+        position: relative;
+        align-self: flex-start;
+        width: 40vw;
+        left:400px;
+    }
+    
+    #fieldset-contacto {
+        position: absolute;
+        width: 30vw;
+        left:0;
+        bottom: 65%;
+    }
+    
+    .fieldset--actividades {
+        position: absolute;
+        width: 40vw;
+        left:0;
+        top: 40%;
+    }
+}
+
+@media screen and (min-width:960px) {
+    #fieldset {
+        position: relative;
+        align-self: flex-start;
+        width: 40vw;
+        left:0;
+    }
+        
+    
+    #fieldset-contacto {
+        position: absolute;
+        width: 30vw;
+        left: 50%;
+        bottom: 70%;
+    }
+    
+    .fieldset--actividades {
+        position: absolute;
+        width: 40vw;
+        left: 50%;
+        top: 40%;
     }
 }
 
 @media screen and (min-width:1320px) {
-    h1 {
-        font-size: 3em;
+    #fieldset {
+        position: relative;
+        align-self: flex-start;
+        width: 40vw;
+        left: -300px;
+        right: 0;
     }
     
-    .fieldset__legend {
-        margin: 5px 10px;
-        font-size: 1.3em;
+    #fieldset-contacto {
+        position: absolute;
+        width: 30vw;
+        left: 60%;
+        bottom: 65%;
     }
-
-    .button {
-        margin: 20px;
-        padding: 20px;
-        font-size: 1.5em;
+    
+    .fieldset--actividades {
+        position: absolute;
+        width: 40vw;
+        left:60%;
+        top: 40%;
     }
 }
 
+
+
+
+
+/* #fieldset {
+    position: relative;
+    align-self: flex-start;
+    width: 40vw;
+    right:500px;
+}
+
+#fieldset-contacto {
+    position: absolute;
+    width: 30vw;
+    left: 60%;
+    bottom: 70%;
+}
+
+.fieldset--actividades {
+    position: absolute;
+    width: 40vw;
+    right: -40%;
+    top: 50%;
+}
+*/
 
 

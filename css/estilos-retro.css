@@ -67,6 +67,7 @@ textarea {
     width: 70%;
     height: 15em;
     border-radius: 5px;
+    border: 1px var(--color-input) solid;
 }
 
 hr {
@@ -75,6 +76,11 @@ hr {
 
 .emoji {
     display: none;
+}
+
+#estilos {
+    justify-content: flex-start;
+    background-color: rgba(240, 248, 255, 0.397);
 }
 
 /* --------------------------------- */

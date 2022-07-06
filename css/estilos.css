@@ -24,6 +24,16 @@ body {
    background-color: var(--color-fondo);
 }
 
+#estilos {
+  color: white;
+  justify-content:flex-start ;
+}
+
+.estilo_label {
+    color: white;
+}
+
+
 .main {
     display: flex;
     align-items: center;
